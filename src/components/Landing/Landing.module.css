@@ -1,0 +1,69 @@
+.background {
+  position: relative;
+  background-color: rgb(62, 78, 163);
+  overflow: hidden;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.4;
+  background-image: url('../../assets/landing-page-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heading1,
+.heading2,
+.text_container1,
+.text_container2,
+.text_container3 {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+.heading1,
+.heading2 {
+  text-transform: uppercase;
+}
+.heading1 {
+  margin-bottom: 90px;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.text_container1 {
+  background-color: rgba(28, 72, 150, 0.8);
+  padding: 20px;
+}
+.text_container2 {
+  background-color: rgba(117, 163, 100, 0.9);
+  padding: 20px;
+}
+.text_container3 {
+  background-color: rgba(102, 75, 183, 0.9);
+  padding: 20px;
+}
+.text_container1 p,
+.text_container2 p,
+.text_container3 p {
+  margin-top: 20px;
+}

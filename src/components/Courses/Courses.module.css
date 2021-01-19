@@ -1,0 +1,59 @@
+/*rgb(236, 239, 241);*/
+.container {
+  background-color: rgb(236, 239, 241);
+  padding: 50px;
+}
+.heading_container {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 50px;
+}
+.heading_container h3 {
+  margin-bottom: 10px;
+  color: rgb(55, 71, 79);
+}
+.heading_container p {
+  color: rgb(144, 164, 174);
+}
+.img {
+  height: 300px;
+  width: 70%;
+  margin-bottom: 30px;
+}
+.avatar {
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+  top: 270px;
+  left: 20px;
+  height: 50px;
+  width: 50px;
+}
+.info {
+  width: 70%;
+  padding: 15px;
+}
+.info p {
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: rgb(55, 71, 79);
+}
+.info small {
+  color: rgb(144, 164, 174);
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.price {
+  color: rgb(15, 71, 162);
+}
+.rating i {
+  color: rgb(255, 171, 0);
+}

@@ -1,0 +1,45 @@
+.background {
+  position: relative;
+  background-color: rgb(62, 78, 163);
+  overflow: hidden;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+.background::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.2;
+  background-image: url('../../assets/beginner-to-pro.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background h2 {
+  font-weight: bold;
+}
+.background p {
+  font-size: 28px;
+}
+
+.btn {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  margin-top: 35px;
+}
