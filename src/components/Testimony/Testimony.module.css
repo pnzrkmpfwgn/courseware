@@ -13,9 +13,11 @@
 .avatar {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .person p,
 .person h4 {
+  margin-left: 10px;
   margin-bottom: 30px;
   text-align: center;
 }

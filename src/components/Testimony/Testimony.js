@@ -22,7 +22,7 @@ const responsive={
 
 const Testimony=()=>{
     return <div className={classes.container}>
-        <Carousel  showDots={true} arrows={true} responsive={responsive}>
+        <Carousel autoPlay={true} autoPlaySpeed={5000} showDots={true} arrows={true} responsive={responsive}>
         <div className={classes.person} ><div className={classes.avatar} ><img className={classes.img} src={img} alt=""/><p>Julian Warren</p> <small>-student</small> </div>
          <h4>Awesome Learning Site</h4> <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. </p> </div>
 

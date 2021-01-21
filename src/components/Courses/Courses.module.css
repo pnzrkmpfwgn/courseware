@@ -1,4 +1,14 @@
 /*rgb(236, 239, 241);*/
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(236, 239, 241);
+  margin-left: 10px;
+  z-index: 1;
+}
+.card:hover {
+  cursor: pointer;
+}
 .container {
   background-color: rgb(236, 239, 241);
   padding: 50px;

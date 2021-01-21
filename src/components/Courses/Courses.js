@@ -21,7 +21,7 @@ const responsive={
 }
 
 const Courses =()=>{
-    const [state,setState] = useState("");
+    const [state,setState] = useState(null);
     useEffect(async () => {
         const response = await fetch("https://5ea5cbca2d86f00016b46276.mockapi.io/api/courses")
         const data = await response.json();
@@ -40,7 +40,9 @@ const Courses =()=>{
  </div>
  
  <Carousel arrows={true} responsive={responsive}>
-   Note:The Courses api doesn't send data sometimes so you may have to uncomment code's this part to see the carousel cards.  {/* {state===null ? <img src={Spinner} /> : state.map(data=>{
+   {/* Note:The Courses api doesn't send data sometimes so you may have to uncomment code's this part to see the carousel cards.   */}
+
+   {state===null ? <img src={Spinner} /> : state.map(data=>{
          return <Course 
          key={data.id}
         image={data.image} 
@@ -52,7 +54,7 @@ const Courses =()=>{
         comments={data.comments}
         duration={data.duration}
         />
-     })} */}
+     })}
  </Carousel>
 </div>
 }

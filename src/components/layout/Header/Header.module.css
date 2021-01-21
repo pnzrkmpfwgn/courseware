@@ -18,6 +18,9 @@
 .logo img {
   width: 90%;
 }
+.logo:hover {
+  cursor: pointer;
+}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -39,8 +42,49 @@
 }
 /*Hover*/
 /*-------------*/
-.nav_links li:hover {
+.nav_links span:hover {
   color: blue;
   cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 82px;
+  text-decoration-thickness: 2px;
 }
+/* Fix active state */
+
 /*-------------*/
+
+/* Dropdown */
+.dropdown1,
+.dropdown2,
+.dropdown3,
+.dropdown4,
+.dropdown5 {
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  color: black;
+}
+.dropdown1 p,
+.dropdown2 p,
+.dropdown3 p,
+.dropdown4 p,
+.dropdown5 p {
+  padding: 0 10px;
+}
+.dropdown1 p:hover,
+.dropdown2 p:hover,
+.dropdown3 p:hover,
+.dropdown4 p:hover,
+.dropdown5 p:hover {
+  background-color: rgb(133, 133, 140);
+  cursor: pointer;
+}
+.dropdown_open {
+  display: block;
+}
+
+.dropdown_close {
+  display: none;
+}

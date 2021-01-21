@@ -7,8 +7,8 @@ const Course =(props)=>{
     <img className={classes.avatar} src={props.avatar} alt=""/>
     <div className={classes.info}>
     <p>{props.title}</p>
-    <small> {props.author_avatar} </small>
-    <br/>
+    
+    
     <div className={classes.features}><span className={classes.price} > ${props.price} </span>
      <span className={classes.rating} >{props.rating} <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star-half-alt"></i> </span></div>
     <hr/>
