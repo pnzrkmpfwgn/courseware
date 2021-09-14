@@ -23,7 +23,7 @@ const responsive={
 const Courses =()=>{
     const [state,setState] = useState(null);
     useEffect(async () => {
-        const response = await fetch("https://5ea5cbca2d86f00016b46276.mockapi.io/api/courses")
+        const response = await fetch("https://picsum.photos/200/300")
         const data = await response.json();
         setState(data);
     }, [])
